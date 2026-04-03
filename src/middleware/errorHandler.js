@@ -1,9 +1,17 @@
 import createHttpError from 'http-errors';
 
+const { HttpError } = createHttpError;
+
 export const errorHandler = (err, req, res, _next) => {
-  const status = createHttpError.isHttpError(err) ? err.status : 500;
+  const status = err instanceof HttpError ? err.status : 500;
+  const message =
+    err instanceof HttpError
+      ? err.message
+      : typeof err.message === 'string' && err.message.trim() !== ''
+        ? err.message
+        : 'Internal Server Error';
 
   res.status(status).json({
-    message: err.message,
+    message,
   });
 };
