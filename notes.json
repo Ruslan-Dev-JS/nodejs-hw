@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Buy groceries",
+    "content": "Milk, eggs, bread and apples",
+    "tag": "Shopping"
+  },
+  {
+    "title": "Team sync",
+    "content": "Prepare updates for sprint review",
+    "tag": "Meeting"
+  },
+  {
+    "title": "Workout plan",
+    "content": "Run 5km and stretch for 15 minutes",
+    "tag": "Health"
+  },
+  {
+    "title": "Budget check",
+    "content": "Review monthly subscriptions and expenses",
+    "tag": "Finance"
+  },
+  {
+    "title": "Project idea",
+    "content": "Build a habit tracker with reminders",
+    "tag": "Ideas"
+  }
+]
